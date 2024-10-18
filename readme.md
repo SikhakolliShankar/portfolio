@@ -57,6 +57,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Shankar Sikhakolli - [email@example.com](mailto:sikhakollishankar16@gmail.com)
+Shankar Sikhakolli - [sikhakollishankar16@gmail.com](mailto:sikhakollishankar16@gmail.com)
 
 Project Link: [https://github.com/SikhakolliShankar/portfolio](https://github.com/SikhakolliShankar/portfolio)
