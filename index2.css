@@ -3,15 +3,22 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     box-sizing: border-box;
+    letter-spacing: 1.2;
+
+}
+
+html,* {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #080808;
     color: #fff;
-    margin: 10px 100px;
-    width: 90vw;
+    /* margin: 10px 100px; */
+    width: 98vw;
+    width: 100%;
 }
 
 #header {
@@ -25,6 +32,7 @@ body {
     padding: 10px 10%;
     padding: 0px 20px;
     margin: 10px 10px;
+    
 }
 
 nav {
@@ -46,6 +54,10 @@ nav {
 .logo span {
     color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#element {
+    color: rgb(235, 64, 34);
 }
 
 nav ul li {
@@ -149,6 +161,11 @@ nav ul li a:hover::after {
     color: white;
 }
 
+.subinfo {
+    line-height: 2;
+    letter-spacing: 1.2px;
+}
+
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
@@ -195,6 +212,8 @@ nav ul li a:hover::after {
     display: block;
 }
 
+
+
 /*--------------------------Tech---------------------------*/
 
 .card {
@@ -208,7 +227,7 @@ nav ul li a:hover::after {
 .card:hover {
     transform: scale(1.02, 1.02);
     transition-duration: 0.5s;
-    background-color: #544f50;
+    background-color: #a78a90;
 }
 
 .info {
@@ -243,6 +262,99 @@ nav ul li a:hover::after {
     gap: 10px;
     font-weight: 400;
     letter-spacing: 2px;
+}
+
+/*-------------------------------Certificates-----------------------------------------------------------------*/
+#certificates {
+    margin-bottom: 70px;
+}
+
+#certificates h1 {
+    text-align: center;
+}
+
+.certi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.certificate img {
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.certificate {
+    border: 2px solid rgb(126, 121, 121);
+    padding: 25px;
+    border-radius: 8px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.certificate:hover {
+    background-color: #4b4747;
+}
+
+.certi-title {
+    text-align: center;
+}
+
+.certi-title:hover {
+    font-weight: 600;
+} 
+
+.certificate img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*------------------------------Internships------------------------------------------------------------*/
+
+#internships {
+    margin-bottom: 70px;
+}
+
+#internships h1 {
+    text-align: center;
+}
+
+.certi-intern {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intern {
+    border: 2px solid rgb(126, 121, 121);
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.intern img {
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+}
+
+.intern>img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.info p {
+    letter-spacing: 3px;
+    line-height: 1.7;
 }
 
 /*--------------------------------Coding Profiles--------------------------------*/
@@ -310,7 +422,7 @@ nav ul li a:hover::after {
 }
 
 .project img:hover {
-    transform: scale(1.02);
+    transform: scale(1.09);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
@@ -324,6 +436,11 @@ nav ul li a:hover::after {
     font-family: 'Courier New', Courier, monospace;
     transform: scale(1.01);
     transition-duration: 1s;
+}
+
+.desc p {
+    letter-spacing: 3px;
+    line-height: 1.7;
 }
 
 .linkicon {
@@ -408,6 +525,30 @@ nav ul li a:hover::after {
         margin: 20px 0;
     }
 
+    nav {
+        max-width: inherit;
+    }
+
+    .logo > div{
+        padding-right: 10rem;
+    }
+
+
+    .menu-icon {
+        display: inline;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+
+
     .tab-links {
         margin-right: 0;
         margin-bottom: 10px;
@@ -419,7 +560,7 @@ nav ul li a:hover::after {
 
     .project {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .project > img {
@@ -440,7 +581,7 @@ nav ul li a:hover::after {
     }
 
     #header {
-        height: auto;
+        height: 100vh;
         padding: 20px;
     }
 
@@ -531,4 +672,20 @@ nav ul li a:hover::after {
     .contacts {
         width: inherit;
     }
+
+    .certificate {
+        flex-direction: column;
+    }
+
+    .intern {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dynamicpos {
+        margin-bottom: 180px;
+    }
+
+
 }

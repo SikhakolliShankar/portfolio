@@ -46,7 +46,7 @@
 
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="dynamicpos"> 
                 <h2 class="logo">
                     <div><span>S</span>IKHAKOLLI &nbsp; <span>S</span>HANKAR</div>
                     <div>
@@ -69,10 +69,13 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <h1>Hello, <br>My Name is <br><span>S.Shankar</span>
+                <h1>Hello, <br>My Name is <br><span>S.Shankar</span><br>
+
+                    <span id="element"></span>
+                    
             </div><br><br>
             <div class="download">
-                Download Portfolio
+                <a style="text-decoration: none; color:white" href="https://drive.google.com/drive/u/0/folders/1zpE_nAn8E17NrM-28KkBK7ih49VZLBTw">Download Portfolio</a>
             </div>
 
         </div>
@@ -89,7 +92,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>I am an undergraduate student in Computer Science and Engineering, driven by a strong motivation to learn
+                    <p class="subinfo">I am an undergraduate student in Computer Science and Engineering, driven by a strong motivation to learn
                         new technologies. I possess a friendly and outgoing personality and am dedicated to achieving success.
                     </p>
 
@@ -111,15 +114,15 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li>
-                                <span>HDLC Technologies</span><div style="margin-bottom: 5px;"></div>
+                                <a href="#HDLC" style="text-decoration: none;"><span>HDLC Technologies</span></a><div style="margin-bottom: 5px;"></div>
                                 <p>Data Science and Machine Learning</p>
                             </li>
                             <li>
-                                <span>Eduskills Edunet</span><div style="margin-bottom: 5px;"></div>
+                                <a href="#MFS" style="text-decoration: none;"><span>Eduskills Edunet</span></a><div style="margin-bottom: 5px;"></div>
                                 <p>FrontEnd Web Development</p>
                             </li>
                             <li>
-                                <span>Mainflow Technologies</span><div style="margin-bottom: 5px;"></div>
+                                <a href="#MFS" style="text-decoration: none;"><span>Mainflow Technologies</span></a><div style="margin-bottom: 5px;"></div>
                                 <p>Full Stack Web Development</p>
                             </li>
                         </ul>
@@ -159,7 +162,7 @@
                 </div>
                 <div class="card">
                     <div class="info">
-                        <img src="https://img.icons8.com/color/344/4a90e2/css3.png" style="background-color: black;" alt="HTML"><br>
+                        <img src="https://img.icons8.com/color/344/4a90e2/css3.png" alt="HTML"><br>
                         <span>CSS</span>
                     </div>
                 </div>
@@ -214,14 +217,16 @@
         <h1 style="text-align: center;">PROJECTS</h1> <br>
         <div class="container">
             <div class="project">
-                <img src="./images/calculator.png" alt="calculator">
+                <img src="./images/image_galllery.png" alt="calculator">
                 <div class="desc">
-                    <h2>Simple Calculator using React
-                        <a target="_blank" href="https://github.com/SikhakolliShankar/Mainflow-Technologies/tree/main/Task5"><img class="linkicon" src="https://img.icons8.com/?size=100&id=7867&format=png&color=FFFFFF">
+                    <h2>Image Gallery using React
+                        <a target="_blank" href="https://github.com/SikhakolliShankar/Mainflow-Technologies/tree/main/Task6"><img class="linkicon" src="https://img.icons8.com/?size=100&id=7867&format=png&color=FFFFFF">
                         </a>
                     </h2>
                     <br>
-                    The Simple Calculator application, a sleek and intuitive calculator built using React and Vite! This project combines modern web technologies to deliver a seamless and responsive calculation experience. Whether you need to perform basic arithmetic or more complex calculations, this app has got you covered.
+                    <p>
+                        Hyderabad Tourist Spots Gallery is a React-based web application that allows users to explore and appreciate the beautiful tourist spots in Hyderabad, India. Each spot is showcased with high-quality images in a grid layout, and users can click on any image to open a modal view for a closer look. The modal provides navigation buttons to easily scroll through the gallery without leaving the modal.
+                    </p>
                 </div>
             </div>
             <br>
@@ -233,9 +238,12 @@
                         </a>
                     </h2>
                     <br>
-                    Our Flask-powered to-do list app enables users to add, edit, and delete tasks effortlessly. It supports task prioritization and status updates, providing a streamlined task management solution accessible from any device.
+                    <p>
+                        Our Flask-powered to-do list app enables users to add, edit, and delete tasks effortlessly. It supports task prioritization and status updates, providing a streamlined task management solution accessible from any device.
+                    </p>
                 </div>
             </div>
+            <br>
             <div class="project">
                 <img src="./images/banglore.png" alt="calculator">
                 <div class="desc">
@@ -244,7 +252,9 @@
                         </a>
                     </h2>
                     <br>
-                    The Bangalore Home Price Prediction project is a machine learning application built to predict house prices in Bangalore based on various input parameters such as area, number of bedrooms, location, and amenities. This project utilizes a Linear Regression model trained on real estate data to provide accurate price estimates.
+                    <p>
+                        The Bangalore Home Price Prediction project is a machine learning application built to predict house prices in Bangalore based on various input parameters such as area, number of bedrooms, location, and amenities. This project utilizes a Linear Regression model trained on real estate data to provide accurate price estimates.
+                    </p>
                 </div>
             </div>
         </div>
@@ -252,7 +262,7 @@
 
     <!----------------------------------Achievements------------------------------------------>
 
-    <div id="achievements">
+    <!-- <div id="achievements">
         <div class="container">
             <h1 style="margin-bottom: 20px;">Achievements</h1>
             <ul class="achievement">
@@ -263,6 +273,64 @@
                 <li>Problem Solving - HackerRank</li>
             </ul>
         </div>
+    </div> -->
+
+    <!-- Certificates -->
+    <div id="certificates">
+        <h1 style="margin-bottom: 20px;">Certificates</h1><br>
+        <div class="container certi-container">
+            <div class="certificate">
+                <img src="./images/Smart Interviews.png" alt="certificate image">
+                <p class="certi-title">Data Structures and Algorithms</p>
+            </div>
+            <div class="certificate">
+                <img src="./images/Problem Solving.png" alt="certificate image">
+                <p class="certi-title">Problem Solving</p>
+            </div>
+            <div class="certificate">
+                <img src="./images/Python.png" alt="certificate image">
+                <p class="certi-title">Python</p>
+            </div>
+            <div class="certificate">
+                <img src="./images/SQL.png" alt="certificate image">
+                <p class="certi-title">SQL</p>
+            </div>
+            <div class="certificate">
+                <img src="./images/DSE.png" alt="certificate image">
+                <p class="certi-title">Data Science for Engineers</p>
+            </div>
+            <div class="certificate">
+                <img src="./images/CC.png" alt="certificate image">
+                <p class="certi-title">Cloud Computing</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------Internships---------------------------------->
+    <div id="internships">
+        <div class="container">
+            <h1 style="margin-bottom: 20px;">Internships</h1><br>
+            <div class="container certi-intern">
+                <div id="HDLC" class="intern">
+                    <img src="./images/HDLC.png" alt="certificate image">
+                    <div class="info">
+                        <h3>Data Science Internship</h3><br>
+                        <p>Successfully completed a virtual internship focused on advanced data preprocessing techniques. Implemented diverse machine learning models, gaining proficiency in data cleaning, feature engineering, and model evaluation.</p>
+                        <p><span style="color:rgb(209, 44, 44)">Organization : </span>HDLC Technologies</p>
+                    </div>
+                </div>
+                <div id="MFS" class="intern">
+                    <img src="./images/MFS.png" alt="certificate image">
+                    <div class="info">
+                        <h3>Full Stack Web Development Internship</h3><br>
+                        <p>Completed a front-end Web Development internship, gaining proficiency in HTML, CSS,Bootstrap, JavaScript, and fundamental React concepts.</p>
+                        <p>Skilled in building user-friendly interfaces and responsive web applications.</p>
+                        <p><span style="color:rgb(209, 44, 44)">Organization : </span>Mainflow Services and Technologies</p>
+                        <p><span style="color:rgb(209, 44, 44)">GitHub Link : </span><a href="https://github.com/SikhakolliShankar/Mainflow-Technologies" style="text-decoration: none; color:inherit">(Mainflow-Technologies)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--------------------------------Coding Profiles----------------------------->
@@ -270,10 +338,10 @@
         <div class="container">
             <h1 style="margin-bottom: 20px;">Coding Profiles</h1>
             <ul class="profiles">
-                <li><a href="#coding"><img src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000" alt="">LeetCode</a></li>
-                <li><a href="#coding"><img src="https://img.icons8.com/?size=100&id=OUPsEPLKIebZ&format=png&color=FFFFFF" alt="">HackerRank</a></li>
-                <li><a href="#coding"><img src="https://img.icons8.com/?size=100&id=4z2zrIWYmGqx&format=png&color=FFFFFF" alt="">CodeChef</a></li>
-                <li><a href="#coding"><img src="./images/gfg-gg-logo.svg" alt="">GeeksforGeeks</a></li>
+                <li><a href="https://leetcode.com/u/SikhakolliShankar/"><img src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000" alt="">LeetCode</a></li>
+                <li><a href="https://www.hackerrank.com/profile/sikhakollishank1"><img src="https://img.icons8.com/?size=100&id=OUPsEPLKIebZ&format=png&color=FFFFFF" alt="">HackerRank</a></li>
+                <li><a href="https://www.codechef.com/users/shankar_816"><img src="https://img.icons8.com/?size=100&id=4z2zrIWYmGqx&format=png&color=FFFFFF" alt="">CodeChef</a></li>
+                <li><a href="https://www.geeksforgeeks.org/user/sikhakollishankar/"><img src="./images/gfg-gg-logo.svg" alt="">GeeksforGeeks</a></li>
             </ul>
         </div>
     </div>
@@ -298,11 +366,13 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js">
         
 
     </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 
 </html>
